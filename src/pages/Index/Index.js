@@ -6,8 +6,9 @@ import Footer from "../../components/Footer/Footer";
 const Index = () => {
   return (
     <div>
-      <Header></Header>
-      <Footer></Footer>
+      <Header />
+      Index
+      <Footer />
     </div>
   );
 };
