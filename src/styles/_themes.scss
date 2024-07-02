@@ -1,0 +1,33 @@
+@import "./variables";
+
+$themes: (
+  mainColor: (
+    lightTheme: $black,
+    darkTheme: $white,
+  ),
+  backgroundColor: (
+    lightTheme: $ivory,
+    darkTheme: $brown,
+  ),
+  subColor: (
+    lightTheme: $lightBrown,
+    darkTheme: $lightBrown,
+  ),
+);
+
+@mixin styles($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop == $mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
+:root {
+  @include styles("lightTheme");
+}
+:root[theme="Dark"] {
+  @include styles("darkTheme");
+}
