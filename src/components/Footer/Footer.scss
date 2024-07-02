@@ -1,0 +1,110 @@
+footer {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin: 10px 0;
+  .footer_aboutMe {
+    margin: 10px auto;
+    display: flex;
+    width: 350px;
+    height: auto;
+
+    // background-color: orange;
+    .footer_image {
+      margin: 10px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-image: url("../../images/pics/pic001.jpeg");
+      background-size: 110px;
+      background-position: 70% 45%;
+      &:hover {
+        mask-image: linear-gradient(rgba(255, 255, 255, 0.468), transparent);
+        cursor: pointer;
+      }
+    }
+    .box1 {
+      //   background-color: brown;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 15px 0;
+
+      p.name {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      .icons {
+        img {
+          width: 25px;
+          height: 25px;
+          padding: 5px;
+          padding-left: 0;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .footer_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: blue;
+    .box2 {
+      display: flex;
+      flex-direction: row;
+      //   background-color: seagreen;
+      p.navBtn {
+        padding: 0 10px;
+        font-weight: bold;
+        font-size: 13px;
+        &:hover {
+          cursor: pointer;
+          color: var(--subColor);
+          transition: 0.3s;
+        }
+      }
+    }
+    .box3 {
+      //   background-color: skyblue;
+      display: flex;
+      flex-direction: row;
+      font-size: 12px;
+      .languages {
+        display: flex;
+        // background-color: green;
+        padding: 0 5px;
+        p.languageBtn {
+          &:hover {
+            cursor: pointer;
+            color: var(--subColor);
+            transition: 0.3s;
+          }
+        }
+      }
+      .themeColor {
+        display: flex;
+        // background-color: greenyellow;
+        padding: 0 5px;
+        p.themeBtn {
+          &:hover {
+            cursor: pointer;
+            color: var(--subColor);
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+  p.copyright {
+    font-size: 8px;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+}
