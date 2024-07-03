@@ -28,6 +28,6 @@ $themes: (
 :root {
   @include styles("lightTheme");
 }
-:root[theme="Dark"] {
+:root[theme="dark"] {
   @include styles("darkTheme");
 }

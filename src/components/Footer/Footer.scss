@@ -87,18 +87,6 @@ footer {
           }
         }
       }
-      .themeColor {
-        display: flex;
-        // background-color: greenyellow;
-        padding: 0 5px;
-        p.themeBtn {
-          &:hover {
-            cursor: pointer;
-            color: var(--subColor);
-            transition: 0.3s;
-          }
-        }
-      }
     }
   }
   p.copyright {
