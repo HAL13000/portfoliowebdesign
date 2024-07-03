@@ -4,6 +4,7 @@ import "./Footer.scss";
 import githubBl from "../../images/icons/github-bl.png";
 import linkedinBl from "../../images/icons/linked-in-bl.png";
 import { useNavigate } from "react-router-dom";
+import ThemeBtn from "../ThemeColor/ThemeBtn";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -70,11 +71,12 @@ const Footer = () => {
               <p>/</p>
               <p className="languageBtn">FR</p>
             </div>
-            <div className="themeColor">
+            <ThemeBtn />
+            {/* <div className="themeColor">
               <p className="themeBtn">LIGHT</p>
               <p>/</p>
               <p className="themeBtn">DARK</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <p className="copyright">&copy; All rights reserved 2024</p>

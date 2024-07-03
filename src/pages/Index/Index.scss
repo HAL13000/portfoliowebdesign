@@ -1,0 +1,23 @@
+@import "../../styles/themes";
+.index {
+  .box_try {
+    background-color: orange;
+    width: 100px;
+    align-items: center;
+    padding: 10px;
+    .try1 {
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      border: 1px solid;
+      background-color: var(--mainColor);
+    }
+    .try2 {
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      border: 1px solid;
+      background-color: var(--backgroundColor);
+    }
+  }
+}
