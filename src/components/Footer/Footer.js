@@ -1,10 +1,13 @@
 import React from "react";
 import "./Footer.scss";
-// import pic001 from "../../images/pics/pic001.jpeg";
+import pic001 from "../../images/pics/pic001.jpeg";
 import githubBl from "../../images/icons/github-bl.png";
 import linkedinBl from "../../images/icons/linked-in-bl.png";
+import githubWh from "../../images/icons/github-wh.png";
+import linkedinWh from "../../images/icons/linked-in-wh.png";
 import { useNavigate } from "react-router-dom";
 import ThemeBtn from "../ThemeColor/ThemeBtn";
+// import { useTheme } from "../ThemeColor/ThemeContext";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -43,8 +46,17 @@ const Footer = () => {
             <p className="name">HARUKA ISHIKAWA</p>
             <p>Web Designer | UX/UI Designer</p>
             <div className="icons">
-              <img src={githubBl} alt="" loading="lazy" onClick={visitGithub} />
+              {/* <img src={iconGithub} alt={"${theme} them icon "} />
+              <img src={iconLinkedin} alt={"${theme} them icon "} /> */}
               <img
+                // className="iconGithub"
+                src={githubBl}
+                alt=""
+                loading="lazy"
+                onClick={visitGithub}
+              />
+              <img
+                // className="iconLinkedIn"
                 src={linkedinBl}
                 alt=""
                 loading="lazy"
@@ -72,11 +84,6 @@ const Footer = () => {
               <p className="languageBtn">FR</p>
             </div>
             <ThemeBtn />
-            {/* <div className="themeColor">
-              <p className="themeBtn">LIGHT</p>
-              <p>/</p>
-              <p className="themeBtn">DARK</p>
-            </div> */}
           </div>
         </div>
         <p className="copyright">&copy; All rights reserved 2024</p>
