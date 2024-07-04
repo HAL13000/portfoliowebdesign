@@ -1,0 +1,14 @@
+button {
+  padding: 15px 40px;
+  margin: 10px;
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
+  background-color: var(--backgroundColor);
+  transition: 0.1s;
+  cursor: pointer;
+  &:hover {
+    color: var(--backgroundColor);
+    background-color: var(--mainColor);
+    border: 1px solid var(--backgroundColor);
+  }
+}

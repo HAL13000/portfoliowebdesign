@@ -6,11 +6,15 @@ const ThemeBtn = () => {
   const handleTheme = useTheme();
   return (
     <div className="themeColor" onClick={handleTheme}>
-      <p className="themeBtn">LIGHT</p>
-      {/* <p className="light"></p> */}
+      <div className="themeBtn_container">
+        <p className="themeBtn">LIGHT</p>
+        <p className="lineLight"></p>
+      </div>
       <p>/</p>
-      <p className="themeBtn">DARK</p>
-      {/* <p className="dark"></p> */}
+      <div className="themeBtn_container">
+        <p className="themeBtn">DARK</p>
+        <p className="lineDark"></p>
+      </div>
     </div>
   );
 };

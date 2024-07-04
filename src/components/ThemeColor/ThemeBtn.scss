@@ -1,15 +1,34 @@
 @import "../../styles/variables";
+@import "../../styles/themes";
+
 .themeColor {
   //   background-color: greenyellow;
   display: flex;
   font-size: 12px;
   padding: 0 5px;
-  p.themeBtn {
-    &:hover {
-      cursor: pointer;
-      color: var(--subColor);
-      transition: 0.3s;
-      //   border-bottom: 1px solid var(--subColor);
+  .themeBtn_container {
+    p.themeBtn {
+      margin-bottom: 0;
+      &:hover {
+        cursor: pointer;
+        color: var(--subColor);
+        transition: 0.3s;
+        // border-bottom: 1px solid;
+      }
+    }
+    p.lineLight {
+      border-bottom: 1px solid $brown;
+      width: 30px;
+      height: 1px;
+      padding: 0;
+      margin: 0;
+    }
+    p.lineDark {
+      border-bottom: 1px solid $ivory;
+      width: 30px;
+      height: 1px;
+      padding: 0;
+      margin: 0;
     }
   }
 }
