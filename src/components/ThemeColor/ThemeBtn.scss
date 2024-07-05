@@ -4,10 +4,11 @@
 .themeColor {
   //   background-color: greenyellow;
   display: flex;
-  font-size: 12px;
+  font-size: 10px;
   padding: 0 5px;
   .themeBtn_container {
     p.themeBtn {
+      padding: 0;
       margin-bottom: 0;
       &:hover {
         cursor: pointer;
