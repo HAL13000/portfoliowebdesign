@@ -9,9 +9,7 @@ const Header = () => {
   const handleToIndex = () => {
     navigate("/");
   };
-  const handleToWork = () => {
-    navigate("/work");
-  };
+
   const handleToAbout = () => {
     navigate("/about");
   };
@@ -23,7 +21,6 @@ const Header = () => {
           <p>HARUKA ISHIKAWA</p>
         </div>
         <div className="menu">
-          <p onClick={handleToWork}>WORK</p>
           <p onClick={handleToAbout}>ABOUT/CONTACT</p>
         </div>
       </header>

@@ -70,23 +70,21 @@ const Footer = () => {
             <p className="navBtn" onClick={handleToIndex}>
               HOME
             </p>
-            <p className="navBtn">WEB DESIGN & WEB DEVELOPMENT</p>
-            <p className="navBtn">GRAPHIC DESIGN</p>
-            <p className="navBtn">ILLUSTRATION</p>
+            <p className="navBtn">PROJECTS</p>
             <p className="navBtn" onClick={handleToAbout}>
               CONTACT
             </p>
           </div>
-          <div className="box3">
-            <div className="languages">
-              <p className="languageBtn">EN</p>
-              <p>/</p>
-              <p className="languageBtn">FR</p>
-            </div>
-            <ThemeBtn />
-          </div>
         </div>
-        <p className="copyright">&copy; All rights reserved 2024</p>
+        <div className="box3">
+          {/* <div className="languages">
+            <p className="languageBtn">EN</p>
+            <p>/</p>
+            <p className="languageBtn">FR</p>
+          </div> */}
+          <p className="copyright">&copy; All rights reserved 2024</p>
+          <ThemeBtn />
+        </div>
       </footer>
     </div>
   );
