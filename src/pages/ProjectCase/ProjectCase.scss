@@ -1,0 +1,65 @@
+@import "../../styles/media";
+
+.projectCase {
+  main {
+    .projectCaseContainer {
+      margin-top: 80px;
+
+      display: flex;
+      flex-direction: row;
+      @include sp {
+        flex-direction: column-reverse;
+      }
+      .imgContainer {
+        // background-color: seagreen;
+        width: 70%;
+        @include sp {
+          width: auto;
+        }
+        img {
+          height: 500px;
+          width: 100%;
+          padding-bottom: 30px;
+          @include tab {
+            height: 300px;
+          }
+        }
+      }
+      .projectContainer {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        right: 0;
+        top: 80px;
+        width: 30%;
+        height: 50vh;
+        @include sp {
+          position: static;
+          align-items: center;
+          text-align: center;
+          margin: 0 auto;
+          height: auto;
+          padding: 10px;
+          width: auto;
+        }
+        .projectDetail {
+          p.title {
+            margin: 0;
+            padding: 50px 30px;
+            padding-bottom: 10px;
+          }
+          p.description {
+            margin: 0;
+            padding: 50px 30px;
+            padding-top: 0;
+          }
+        }
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,6 @@
 @import "./themes";
+@import "./media";
+@import "./animation";
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -11,7 +13,53 @@ body {
 }
 
 main {
-  margin: 0 10px;
+  margin: 0px 100px;
+  @include tab {
+    margin: 0px 30px;
+  }
+  @include sp {
+    margin: 0 10px;
+  }
+}
+p.section {
+  font-weight: bold;
+  font-size: 32px;
+  @include tab {
+    font-size: 28px;
+  }
+  @include sp {
+    font-size: 24px;
+  }
+}
+p.title {
+  font-weight: bold;
+  font-size: 28px;
+  @include tab {
+    font-size: 24px;
+  }
+  @include sp {
+    font-size: 18px;
+  }
+}
+p.description {
+  font-size: 18px;
+  @include tab {
+    font-size: 16px;
+  }
+  @include sp {
+    font-size: 14px;
+  }
+}
+p.item {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  @include tab {
+    font-size: 12px;
+  }
+  @include sp {
+    font-size: 10px;
+  }
 }
 
 code {
