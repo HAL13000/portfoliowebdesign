@@ -1,105 +1,128 @@
 @import "../../styles/themes";
+@import "../../styles/media";
+@import "../../styles/animation";
 .index {
   p.section {
-    font-weight: bold;
-    font-size: 32px;
     text-align: center;
     padding: 50px 0 10px 0;
     margin: 0;
   }
   .hero {
-    background-color: gainsboro;
+    // background-color: gainsboro;
+    margin-top: 80px;
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     border-bottom: 1px solid var(--mainColor);
     .hero_container {
       h1 {
-        padding: 30px 10px;
+        padding: 0px 50px;
         margin: 0;
+        @include tab {
+          padding: 0px 20px;
+        }
       }
       .heroBox {
         position: absolute;
         bottom: 40px;
-        p.name {
-          font-size: 24px;
-          font-weight: bold;
-          padding: 10px 10px 0 10px;
-          margin: 0;
-        }
         p.title {
-          font-size: 16px;
-          padding: 0 10px 10px 10px;
+          padding: 50px 50px 0 50px;
           margin: 0;
+          @include tab {
+            padding: 20px 20px 0 20px;
+          }
+        }
+        p.description {
+          padding: 20px 50px 0 50px;
+          margin: 0;
+          @include tab {
+            padding: 20px 20px;
+          }
         }
       }
     }
   }
   main {
     .myService {
-      //   background-color: gray;
-      min-height: 100vh;
+      //   background-color: seagreen;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       .myServiceBox {
-        // background-color: green;
+        // background-color: gray;
+        @include fadeIn;
         display: flex;
         flex-direction: row;
-        margin: 20px;
+        margin: 30px;
         margin-top: 0;
         img {
-          width: 250px;
-          height: 250px;
-          padding: 10px;
+          width: 300px;
+          height: 300px;
+          padding: 30px;
+          @include tab {
+            width: 230px;
+            height: 230px;
+            padding: 10px;
+          }
+          @include sp {
+            width: 130px;
+            height: 130px;
+          }
         }
         .serviceDescription {
           display: flex;
           flex-direction: column;
           p.title {
-            font-size: 24px;
-            font-weight: bold;
             margin: 20px;
             padding: 0;
           }
           p.description {
-            width: 300px;
+            width: 500px;
             padding: 0;
             margin: 0 20px;
+            @include tab {
+              width: 200px;
+            }
           }
         }
       }
-      .myServiceBox:nth-child(odd) {
+      .myServiceBox:nth-child(even) {
         flex-direction: row-reverse;
       }
     }
 
     .projects {
-      //   background-color: seagreen;
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
+      width: 100%;
     }
     .contactMe {
-      //   background-color: slategray;
+      @include fadeUp;
       display: flex;
       flex-direction: row;
+      justify-content: center;
       padding: 100px 50px;
+      @include sp {
+        flex-direction: column;
+      }
+
       img {
         width: 300px;
         height: 300px;
       }
       .contactMe_container {
-        width: 250px;
+        width: 300px;
         padding: 0 20px;
         p.subtitle {
           padding: 0;
           margin: 0;
         }
         p.title {
-          font-size: 24px;
-          font-weight: bold;
           padding: 0;
           margin: 0;
         }
-        p.description {
-          width: 100%;
-        }
+
         button {
           width: 100%;
           margin: 0;
