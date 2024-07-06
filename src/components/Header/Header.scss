@@ -1,10 +1,12 @@
 @import "../../styles/themes";
+@import "../../styles/media";
 
 header {
   z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
+  overflow: hidden;
   background-color: var(--backgroundColor);
   border-bottom: 1px solid;
   margin: 0;
@@ -32,6 +34,9 @@ header {
   .menu {
     display: flex;
     padding: 10px;
+    @include sp {
+      padding: 5px;
+    }
     p {
       padding-left: 15px;
       font-weight: bold;
@@ -39,6 +44,9 @@ header {
         cursor: pointer;
         color: var(--subColor);
         transition: 0.3s;
+      }
+      @include sp {
+        padding: 0px;
       }
     }
   }

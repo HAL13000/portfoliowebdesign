@@ -2,21 +2,10 @@
 @import "../../styles/media";
 
 .about {
-  //   .hero {
-  //     // background-color: gainsboro;
-  //     width: 100%;
-  //     min-height: 90vh;
-  //     border-bottom: 1px solid var(--mainColor);
-  //     p {
-  //       font-size: 32px;
-  //       font-weight: bold;
-  //       padding: 30px 10px;
-  //       margin: 0;
-  //     }
-  //   }
+  overflow: hidden;
   main {
     .aboutMe {
-      margin-top: 80px;
+      margin-top: 50px;
 
       display: flex;
       flex-direction: row;
@@ -25,6 +14,8 @@
       height: 100vh;
       border-bottom: 1px solid var(--mainColor);
       @include tab {
+        margin-top: 80px;
+
         height: auto;
       }
       @include sp {
@@ -86,6 +77,8 @@
           padding: 10px;
         }
         @include sp {
+          animation: none;
+          width: 100%;
           align-items: center;
         }
       }
@@ -98,3 +91,16 @@
     }
   }
 }
+
+//   .hero {
+//     // background-color: gainsboro;
+//     width: 100%;
+//     min-height: 90vh;
+//     border-bottom: 1px solid var(--mainColor);
+//     p {
+//       font-size: 32px;
+//       font-weight: bold;
+//       padding: 30px 10px;
+//       margin: 0;
+//     }
+//   }

@@ -4,12 +4,13 @@ import img003l from "../../images/pics/img003_l.jpeg";
 
 export const data = [
   {
-    title: "hello",
+    title: "Todos",
     url: img001l,
     hashtags: ["#WebDesign", "#WebDevelopment"],
     id: "001",
-    description: "This is a project. Designed for who and what. ",
-    projectImages: [img002l, img003l],
+    description:
+      " □Page Navigate Correctly □Page Navigate for PROJECTS   □ Icon ColorChange？",
+    projectImages: [img002l, img003l, img001l],
   },
   {
     title: "hey",

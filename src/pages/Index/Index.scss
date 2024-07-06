@@ -105,15 +105,25 @@
       padding: 100px 50px;
       @include sp {
         flex-direction: column;
+        animation: none;
       }
 
       img {
         width: 300px;
         height: 300px;
+        @include sp {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+        }
       }
       .contactMe_container {
         width: 300px;
         padding: 0 20px;
+        @include sp {
+          width: 100%;
+          padding: 0;
+        }
         p.subtitle {
           padding: 0;
           margin: 0;

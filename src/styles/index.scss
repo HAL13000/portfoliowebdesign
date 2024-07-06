@@ -19,6 +19,7 @@ main {
   }
   @include sp {
     margin: 0 10px;
+    overflow: hidden;
   }
 }
 p.section {
