@@ -21,12 +21,12 @@ export const Project = () => {
         <main>
           <div className="projectCaseContainer">
             <div className="imgContainer">
+              {/* <img src={project.url} />
               <img src={project.url} />
-              <img src={project.url} />
-              <img src={project.url} />
-              {/* {project.projectImages.map((projectImage, i) => (
-                <img src={project.projectImage} />
-              ))} */}
+              <img src={project.url} /> */}
+              {project.projectImages.map((projectImage, i) => (
+                <img src={projectImage} />
+              ))}
             </div>
             <div className="projectContainer">
               <div className="projectDetail">
