@@ -8,8 +8,7 @@ export const data = [
     url: img001l,
     hashtags: ["#WebDesign", "#WebDevelopment"],
     id: "001",
-    description:
-      " □Page Navigate Correctly □Page Navigate for PROJECTS   □ Icon ColorChange？",
+    description: "  □ Slideshow, □Page scroll Project useTheme",
     projectImages: [img002l, img003l, img001l],
   },
   {

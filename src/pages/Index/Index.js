@@ -1,22 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Index.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Project from "../../components/ProjectCard/Project";
 import { data } from "./_data";
 import webDesignImg from "../../images/pics/img_webdesign_m.png";
 import webDevImg from "../../images/pics/img_webdevelop_m.png";
 import graphicImg from "../../images/pics/img_graphicdesign_m.png";
 import creativeImg from "../../images/pics/create002_m.png";
+import SlideShow from "../../components/SlideShow/SlideShow";
 
 const Index = () => {
   const navigate = useNavigate();
+  const { state } = useLocation();
+  const { targetId } = state || {};
 
   const handleAbout = () => {
     navigate("/about");
   };
+
+  useEffect(() => {
+    const el = document.getElementById(targetId);
+    if (el) {
+      const offset = -50;
+      const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition + offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  }, 100);
+
   return (
     <div className="index">
       <Header />
@@ -37,15 +54,20 @@ const Index = () => {
             </p>
           </div>
         </div>
-
-        {/* <img /> */}
+        {/* <Button
+          text="test"
+          onClick={() => {
+            navigate("/test");
+          }}
+        /> */}
+        <SlideShow />
       </div>
       <main>
         {/* My service */}
         <div className="myService">
           <p className="section">MY SERVICE</p>
           <div className="myServiceBox">
-            <img src={webDesignImg} />
+            <img className="changeColor" src={webDesignImg} />
             <div className="serviceDescription">
               <p className="title">Web Design</p>
               <p className="description">
@@ -56,7 +78,7 @@ const Index = () => {
             </div>
           </div>
           <div className="myServiceBox">
-            <img src={webDevImg} />
+            <img className="changeColor" src={webDevImg} />
             <div className="serviceDescription">
               <p className="title">
                 Web Development <br /> Front-End
@@ -70,7 +92,7 @@ const Index = () => {
             </div>
           </div>
           <div className="myServiceBox">
-            <img src={graphicImg} />
+            <img className="changeColor" src={graphicImg} />
             <div className="serviceDescription">
               <p className="title">Graphic Design</p>
               <p className="description">
@@ -83,7 +105,9 @@ const Index = () => {
           </div>
         </div>
         {/* projects */}
-        <p className="section">PROJECTS</p>
+        <p className="section" id="project">
+          PROJECTS
+        </p>
         <div className="projects">
           {data.map((project, i) => (
             <Project project={project} />
@@ -91,7 +115,7 @@ const Index = () => {
         </div>
         {/* contact me */}
         <div className="contactMe">
-          <img src={creativeImg} />
+          <img className="changeColor" src={creativeImg} />
           <div className="contactMe_container">
             <p className="subTitle">HELLO</p>
             <p className="title">

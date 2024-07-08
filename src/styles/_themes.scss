@@ -30,4 +30,7 @@ $themes: (
 }
 :root[theme="dark"] {
   @include styles("darkTheme");
+  img.changeColor {
+    filter: brightness(0) invert(1);
+  }
 }
