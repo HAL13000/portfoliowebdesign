@@ -2,6 +2,7 @@ import React from "react";
 import "./About.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import pic002 from "../../images/pics/pic002.png";
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
       </div> */}
       <main>
         <div className="aboutMe">
-          <img />
+          <img src={pic002} />
           <div className="aboutMeContainer">
             <p className="title">ABOUT</p>
             <p className="description">

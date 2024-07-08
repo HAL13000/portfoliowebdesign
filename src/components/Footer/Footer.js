@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.scss";
 import pic001 from "../../images/pics/pic001.jpeg";
 import githubBl from "../../images/icons/github-bl.png";
 import linkedinBl from "../../images/icons/linked-in-bl.png";
 import githubWh from "../../images/icons/github-wh.png";
 import linkedinWh from "../../images/icons/linked-in-wh.png";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ThemeBtn from "../ThemeColor/ThemeBtn";
 // import { useTheme } from "../ThemeColor/ThemeContext";
 
@@ -25,15 +25,28 @@ const Footer = () => {
   const handleToIndex = () => {
     navigate("/");
   };
-  // const handleToAbout = () => {
-  //   navigate("/about");
-  // };
-  // const handleToAbout = () => {
-  //   navigate("/about");
-  // };
-  // const handleToAbout = () => {
-  //   navigate("/about");
-  // };
+
+  const handleToProject = () => {
+    // window.location.reload();
+    let path = window.location.pathname;
+    let project = document.getElementById("project");
+
+    console.log(path);
+
+    if (path === "/") {
+      const offset = -50;
+      const elementPosition =
+        project.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition + offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    } else {
+      navigate("/", { state: { targetId: "project" } });
+    }
+  };
+
   const handleToAbout = () => {
     navigate("/about");
   };
@@ -49,14 +62,14 @@ const Footer = () => {
               {/* <img src={iconGithub} alt={"${theme} them icon "} />
               <img src={iconLinkedin} alt={"${theme} them icon "} /> */}
               <img
-                // className="iconGithub"
+                className="changeColor"
                 src={githubBl}
                 alt=""
                 loading="lazy"
                 onClick={visitGithub}
               />
               <img
-                // className="iconLinkedIn"
+                className="changeColor"
                 src={linkedinBl}
                 alt=""
                 loading="lazy"
@@ -70,7 +83,9 @@ const Footer = () => {
             <p className="navBtn" onClick={handleToIndex}>
               HOME
             </p>
-            <p className="navBtn">PROJECTS</p>
+            <p className="navBtn" onClick={handleToProject}>
+              PROJECTS
+            </p>
             <p className="navBtn" onClick={handleToAbout}>
               CONTACT
             </p>
