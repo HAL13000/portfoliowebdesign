@@ -32,8 +32,8 @@ export const Project = () => {
               <div className="projectDetail">
                 <p className="title">{project.title}</p>
                 <p className="description">{project.description}</p>
+                <Button text="Discover" />
               </div>
-              <Button text="Discover" />
             </div>
           </div>
         </main>

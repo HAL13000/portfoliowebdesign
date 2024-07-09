@@ -1,9 +1,11 @@
 $pc: 1280px; // PC
 $tab: 880px; // tablet
-$sp: 430px; // smartPhone
+$sp: 600px; // smartPhone
+
+// large screen
 
 @mixin pc {
-  @media (min-width: ($pc)) {
+  @media (max-width: ($pc)) {
     @content;
   }
 }

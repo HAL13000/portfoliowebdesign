@@ -25,14 +25,11 @@ const Footer = () => {
   const handleToIndex = () => {
     navigate("/");
   };
-
   const handleToProject = () => {
     // window.location.reload();
     let path = window.location.pathname;
     let project = document.getElementById("project");
-
-    console.log(path);
-
+    // console.log(path);
     if (path === "/") {
       const offset = -50;
       const elementPosition =
