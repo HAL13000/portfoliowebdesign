@@ -2,9 +2,17 @@
 
 .projectCase {
   main {
-    .projectCaseContainer {
-      margin-top: 80px;
+    margin: 0 300px 0 48px;
+    @include tab {
+      margin: 0 200px 0 10px;
+    }
+    @include sp {
+      margin: 10px;
+    }
 
+    .projectCaseContainer {
+      // position: relative;
+      margin-top: 80px;
       display: flex;
       flex-direction: row;
       @include sp {
@@ -12,52 +20,70 @@
       }
       .imgContainer {
         // background-color: seagreen;
-        width: 70%;
+        // width: 70%;
+        width: auto;
+        max-width: 100%;
+        margin: auto;
+        display: block;
         @include sp {
           width: auto;
         }
         img {
-          height: 500px;
           width: 100%;
           padding-bottom: 30px;
-          @include tab {
-            height: 300px;
-          }
         }
       }
       .projectContainer {
-        position: fixed;
+        // background-color: blue;
         display: flex;
         align-items: center;
         justify-content: start;
         flex-direction: column;
+        padding-top: 80px;
         right: 0;
-        top: 80px;
-        width: 30%;
-        height: 50vh;
+        top: 0;
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        @include tab {
+          width: 200px;
+          height: 400px;
+        }
         @include sp {
           position: static;
           align-items: center;
           text-align: center;
-          margin: 0 auto;
-          height: auto;
-          padding: 10px;
           width: auto;
+          padding: 0;
+          padding-bottom: 20px;
+          height: auto;
         }
+
         .projectDetail {
+          align-items: center;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
           p.title {
             margin: 0;
             padding: 50px 30px;
             padding-bottom: 10px;
+            @include sp {
+              padding: 10px;
+            }
           }
           p.description {
             margin: 0;
             padding: 50px 30px;
             padding-top: 0;
+            @include sp {
+              padding: 5px;
+            }
           }
-        }
-        button {
-          margin: 0;
+          // button {
+          //   // align-items: center;
+          //   // margin: 0 auto;
+          // }
         }
       }
     }

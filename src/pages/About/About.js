@@ -5,6 +5,15 @@ import Footer from "../../components/Footer/Footer";
 import pic002 from "../../images/pics/pic002.png";
 
 const About = () => {
+  const handleToGithub = () => {
+    window.open("https://github.com/HAL13000", "_blank");
+  };
+  const handleToLinkedIn = () => {
+    window.open(
+      "https://www.linkedin.com/in/haruka-ishikawa-795685232/",
+      "_blank"
+    );
+  };
   return (
     <div className="about">
       <Header />
@@ -52,8 +61,12 @@ const About = () => {
               <p className="item">harukaishikawa8000@gmail.com</p>
             </div>
             <div className="itemBox">
-              <button className="navigateBtn">→ Linked In</button>
-              <button className="navigateBtn">→ Github</button>
+              <button className="navigateBtn" onClick={handleToLinkedIn}>
+                → Linked In
+              </button>
+              <button className="navigateBtn" onClick={handleToGithub}>
+                → Github
+              </button>
             </div>
           </div>
         </div>
