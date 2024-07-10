@@ -1,4 +1,4 @@
-@import "../../styles/animation";
+// @import "../../styles/animation";
 @import "../../styles/media";
 
 .about {
@@ -36,7 +36,7 @@
         }
       }
       .aboutMeContainer {
-        @include slideIn;
+        // @include slideIn;
         width: 300px;
         padding: 0 50px;
 
@@ -67,7 +67,7 @@
         }
       }
       .itemBox {
-        @include slideInScroll;
+        // @include slideInScroll;
         // background-color: seagreen;
         width: 60%;
         display: flex;

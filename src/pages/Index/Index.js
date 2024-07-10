@@ -54,14 +54,9 @@ const Index = () => {
             </p>
           </div>
         </div>
-        {/* <Button
-          text="test"
-          onClick={() => {
-            navigate("/test");
-          }}
-        /> */}
         <SlideShow />
       </div>
+
       <main>
         {/* My service */}
         <div className="myService">
@@ -131,6 +126,13 @@ const Index = () => {
             <Button text="Contact Me" onClick={handleAbout} />
           </div>
         </div>
+
+        <Button
+          text="test"
+          onClick={() => {
+            navigate("/test");
+          }}
+        />
       </main>
       <Footer />
     </div>
@@ -138,18 +140,3 @@ const Index = () => {
 };
 
 export default Index;
-
-{
-  /* <div className="box_try">
-  <div className="try1">
-    Main Color
-    <br />
-    light : Black dark : White
-  </div>
-  <div className="try2">
-    Background Color
-    <br />
-    light : Ivory dark : Brown
-  </div>
-</div> */
-}

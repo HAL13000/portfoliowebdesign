@@ -25,7 +25,7 @@ const About = () => {
       </div> */}
       <main>
         <div className="aboutMe">
-          <img src={pic002} />
+          <img src={pic002} loading="lazy" />
           <div className="aboutMeContainer">
             <p className="title">ABOUT</p>
             <p className="description">

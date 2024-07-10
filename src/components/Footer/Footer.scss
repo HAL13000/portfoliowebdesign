@@ -1,3 +1,4 @@
+@import "../../styles/media";
 footer {
   border-top: 1px solid;
   margin-top: 10px;
@@ -16,18 +17,21 @@ footer {
       background-image: url("../../images/pics/pic001.jpeg");
       background-size: 110px;
       background-position: 70% 45%;
+      @include sp {
+        width: 60px;
+        height: 60px;
+      }
       &:hover {
         mask-image: linear-gradient(rgba(255, 255, 255, 0.468), transparent);
         cursor: pointer;
       }
     }
     .box1 {
-      //   background-color: brown;
+      // background-color: brown;
       display: flex;
       flex-direction: column;
       padding: 0;
       margin: 15px 0;
-
       p.name {
         font-weight: bold;
         font-size: 18px;

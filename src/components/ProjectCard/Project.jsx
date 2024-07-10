@@ -11,7 +11,7 @@ const Project = ({ project }) => {
 
   return (
     <div className="project" onClick={handleNavigateProjectCase}>
-      <img src={project.url} />
+      <img src={project.url} loading="lazy" />
       <div className="label">
         <p className="title">{project.title}</p>
         {project.hashtags && (

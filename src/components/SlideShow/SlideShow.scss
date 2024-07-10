@@ -3,6 +3,10 @@
   width: 100vw;
   height: 90vh;
   overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
 }
 
 .slide {
