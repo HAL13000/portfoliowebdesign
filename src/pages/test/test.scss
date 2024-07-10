@@ -1,0 +1,38 @@
+.test {
+  main {
+    .box_try {
+      background-color: orange;
+      width: 100px;
+      align-items: center;
+      padding: 10px;
+      .try1 {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        background-color: var(--mainColor);
+      }
+      .try2 {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        background-color: var(--backgroundColor);
+      }
+    }
+    .manyBox {
+      //   background-color: gray;
+      text-align: center;
+      align-items: center;
+      p {
+        padding: 120px;
+      }
+      .lBox {
+        background-color: seagreen;
+      }
+      .lBoxRed {
+        background-color: rgb(193, 166, 166);
+      }
+    }
+  }
+}

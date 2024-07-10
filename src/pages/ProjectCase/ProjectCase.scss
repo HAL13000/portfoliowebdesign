@@ -1,6 +1,8 @@
 @import "../../styles/media";
 
 .projectCase {
+  overflow: hidden;
+
   main {
     margin: 0 300px 0 48px;
     @include tab {
@@ -17,6 +19,9 @@
       flex-direction: row;
       @include sp {
         flex-direction: column-reverse;
+      }
+      p.description {
+        text-align: left;
       }
       .imgContainer {
         // background-color: seagreen;

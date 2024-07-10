@@ -12,6 +12,7 @@ import Travibes002 from "../../images/projectImages/Travibes002.jpg";
 import Travibes003 from "../../images/projectImages/Travibes003.jpg";
 import Travibes004 from "../../images/projectImages/Travibes004.jpg";
 import Travibes005 from "../../images/projectImages/Travibes005.jpg";
+import img001 from "../../images/pics/img_graphicdesign_m.png";
 
 export const data = [
   {
@@ -19,47 +20,57 @@ export const data = [
     url: Travibes005,
     hashtags: ["#WebDesign", "#WebDevelopment"],
     id: "001",
-    description: "  □ Slideshow, □Page scroll Project useTheme",
+    description:
+      "Travibes is a website for a travel agency that offers camping car rentals and helps plan the perfect road trip.",
     projectImages: [Travibes004, Travibes002, Travibes001, Travibes003],
+    link: "https://travibes.vercel.app/",
   },
   {
     title: "Chattie",
     url: Chattie001,
     hashtags: ["#WebDesign", "#WebDevelopment"],
     id: "002",
-    description: "  □ Slideshow, □Page scroll Project useTheme",
+    description:
+      "Chattie is a simple chatting service designed for those who prefer straightforward and basic communication. Users can create an account, add friends by ID, and start chatting. The service uses Firebase for its database management.",
     projectImages: [Chattie002, Chattie003, Chattie001],
+    link: "https://chattie-kappa.vercel.app/",
   },
   {
     title: "My Memo",
     url: MyMemo003,
     hashtags: ["#WebDesign", "#WebDevelopment"],
     id: "003",
-    description: "This is a project. Designed for who and what. ",
+    description:
+      "My Memo is a web application for taking and managing notes, inspired by Notion. Users can create, edit, and access their memos from laptops, tablets, and phones, ensuring that their notes are always available across all devices. ",
     projectImages: [MyMemo002, MyMemo001],
+    link: "https://mymemo-client.vercel.app/login",
   },
   {
     title: "Meow Chatting",
     url: Meowchatting003,
     hashtags: ["#WebDesign", "#GraphicDesign"],
     id: "004",
-    description: "This is a project. Designed for who and what. ",
+    description:
+      "A demonstration page for Meow Chatting an app for everyone who wants to communicate with cats. I contributed to the graphic design and development of the website. The app translates meows, allowing you to understand and respond to your cat, a neighbor's cat, or even cats you meet on the street.",
     projectImages: [Meowchatting001, Meowchatting002],
+    link: "https://meow-chatting.vercel.app/",
   },
-  //   {
-  //     title: "hey",
-  //     url: img001l,
-  //     hashtags: ["#WebDesign", "#WebDevelopment"],
-  //     id: "003",
-  //     description: "This is a project. Designed for who and what. ",
-  //     projectImages: [img002l, img003l],
-  //   },
-  //   {
-  //     title: "hey",
-  //     url: img001l,
-  //     hashtags: ["#WebDesign", "#WebDevelopment"],
-  //     id: "004",
-  //     description: "This is a project. Designed for who and what. ",
-  //     projectImages: [img002l, img003l],
-  //   },
+  {
+    title: "Todos",
+    url: img001,
+    hashtags: ["#WebDesign", "#GraphicDesign"],
+    id: "005",
+    description: " Animation Observation, modifier le portfolio ",
+    projectImages: [img001],
+    link: "",
+  },
 ];
+
+//   {
+//     title: "",
+//     url: imgdef,
+//     hashtags: ["#WebDesign", "#WebDevelopment"],
+//     id: "00_",
+//     description: "Edit ",
+//     projectImages: [imgdef01, imgdef02],
+//   },

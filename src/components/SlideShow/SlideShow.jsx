@@ -36,6 +36,7 @@ const SlideShow = () => {
             className={`slide ${index === currentIndex ? "active" : ""}`}
             style={{ backgroundImage: `url(${slideData.url})` }}
             src={slideData.url}
+            loading="lazy"
           />
         ))}
       </div>

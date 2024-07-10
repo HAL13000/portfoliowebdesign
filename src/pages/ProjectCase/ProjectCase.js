@@ -10,9 +10,11 @@ export const Project = () => {
   let [searchParams, _] = useSearchParams();
   let id = searchParams.get("id");
 
-  console.log(id);
+  // console.log(id);
   const project = data.find((entry) => entry.id === id);
-  console.log(project);
+  const handleDiscoverMore = () => {
+    window.open(`${project.link}`, "_blank");
+  };
 
   if (project) {
     return (
@@ -32,7 +34,7 @@ export const Project = () => {
               <div className="projectDetail">
                 <p className="title">{project.title}</p>
                 <p className="description">{project.description}</p>
-                <Button text="Discover" />
+                <Button text="Discover" onClick={handleDiscoverMore} />
               </div>
             </div>
           </div>

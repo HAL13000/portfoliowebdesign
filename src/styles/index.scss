@@ -1,6 +1,6 @@
 @import "./themes";
 @import "./media";
-@import "./animation";
+@import "../../src/components/Animation/animation";
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
