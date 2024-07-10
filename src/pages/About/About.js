@@ -2,7 +2,8 @@ import React from "react";
 import "./About.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import pic002 from "../../images/pics/pic002.png";
+import pic003 from "../../images/pics/pic003.png";
+import AnimatedComponent from "../../components/Animation/AnimatedComponent";
 
 const About = () => {
   const handleToGithub = () => {
@@ -17,15 +18,9 @@ const About = () => {
   return (
     <div className="about">
       <Header />
-      {/* <div className="hero">
-        <p>
-          Web Design, Web Development, Graphic Design, all for your creative
-          needs
-        </p>
-      </div> */}
       <main>
         <div className="aboutMe">
-          <img src={pic002} loading="lazy" />
+          <img src={pic003} loading="lazy" />
           <div className="aboutMeContainer">
             <p className="title">ABOUT</p>
             <p className="description">
@@ -54,61 +49,68 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="contact">
-          <div className="itemContainer">
-            <p className="title">CONTACT</p>
-            <div className="itemBox">
-              <p className="item">harukaishikawa8000@gmail.com</p>
-            </div>
-            <div className="itemBox">
-              <button className="navigateBtn" onClick={handleToLinkedIn}>
-                → Linked In
-              </button>
-              <button className="navigateBtn" onClick={handleToGithub}>
-                → Github
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="skills">
-          <div className="itemContainer">
-            <p className="title">SKILLS</p>
-            <div className="itemBox">
-              <p className="item">Web Design</p>
-              <p className="item">UX / UI Design</p>
-              <p className="item">Web Development Front-end</p>
-            </div>
-            <div className="itemBox">
-              <p className="item">Iconography & Illustration</p>
-              <p className="item">Print & Editorial Logo Design</p>
-              <p className="item">Logo Design</p>
+        <AnimatedComponent animationType="slideIn">
+          <div className="contact">
+            <div className="itemContainer">
+              <p className="title">CONTACT</p>
+              <div className="itemBox">
+                <p className="item">harukaishikawa8000@gmail.com</p>
+              </div>
+              <div className="itemBox">
+                <button className="navigateBtn" onClick={handleToLinkedIn}>
+                  → Linked In
+                </button>
+                <button className="navigateBtn" onClick={handleToGithub}>
+                  → Github
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="languages">
-          <div className="itemContainer">
-            <p className="title">LANGUAGES/TOOLS</p>
-            <div className="itemBox">
-              <p className="item">Figma</p>
-              <p className="item">Procreate</p>
-              <p className="item">ClipStudio</p>
-              <p className="item">Adobe PhotoShop</p>
-              <p className="item">Adobe Illustrator</p>
+        </AnimatedComponent>
+        <AnimatedComponent animationType="slideIn">
+          <div className="skills">
+            <div className="itemContainer">
+              <p className="title">SKILLS</p>
+              <div className="itemBox">
+                <p className="item">Web Design</p>
+                <p className="item">UX / UI Design</p>
+                <p className="item">Web Development Front-end</p>
+              </div>
+              <div className="itemBox">
+                <p className="item">Iconography & Illustration</p>
+                <p className="item">Print & Editorial Logo Design</p>
+                <p className="item">Logo Design</p>
+              </div>
             </div>
+          </div>
+        </AnimatedComponent>
 
-            <div className="itemBox">
-              <p className="item">HTML/CSS</p>
-              <p className="item">Sass</p>
-              <p className="item">Javascript</p>
-              <p className="item">React.js</p>
-            </div>
-            <div className="itemBox">
-              <p className="item">English </p>
-              <p className="item">French</p>
-              <p className="item">Japanese</p>
+        <AnimatedComponent animationType="slideIn">
+          <div className="languages">
+            <div className="itemContainer">
+              <p className="title">LANGUAGES/TOOLS</p>
+              <div className="itemBox">
+                <p className="item">Figma</p>
+                <p className="item">Procreate</p>
+                <p className="item">ClipStudio</p>
+                <p className="item">Adobe PhotoShop</p>
+                <p className="item">Adobe Illustrator</p>
+              </div>
+
+              <div className="itemBox">
+                <p className="item">HTML/CSS</p>
+                <p className="item">Sass</p>
+                <p className="item">Javascript</p>
+                <p className="item">React.js</p>
+              </div>
+              <div className="itemBox">
+                <p className="item">English </p>
+                <p className="item">French</p>
+                <p className="item">Japanese</p>
+              </div>
             </div>
           </div>
-        </div>
+        </AnimatedComponent>
       </main>
       <Footer />
     </div>
@@ -116,3 +118,12 @@ const About = () => {
 };
 
 export default About;
+
+{
+  /* <div className="hero">
+        <p>
+          Web Design, Web Development, Graphic Design, all for your creative
+          needs
+        </p>
+      </div> */
+}

@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import SlideShow from "../../components/SlideShow/SlideShow";
+// import SlideShow from "../../components/SlideShow/SlideShow";
 import Footer from "../../components/Footer/Footer";
 import "./test.scss";
+import AnimatedComponent from "../../components/Animation/AnimatedComponent";
 
 const TestPage = () => {
   return (
@@ -27,18 +28,24 @@ const TestPage = () => {
           <div className="lBox">
             <p>ABC</p>
           </div>
+          <AnimatedComponent animationType="fadeUp">
+            <div className="lBox">
+              <p>Fade Up</p>
+            </div>
+          </AnimatedComponent>
           <div className="lBox">
             <p>ABC</p>
           </div>
-          <div className="lBox">
-            <p>ABC</p>
-          </div>
+          {/* <AnimatedComponent animationType="fadeIn"> */}
           <div className="lBoxRed">
-            <p>ABC</p>
+            <p>fadeIn</p>
           </div>
-          <div className="lBox">
-            <p>ABC</p>
-          </div>
+          {/* </AnimatedComponent> */}
+          <AnimatedComponent animationType="slideIn">
+            <div className="lBox">
+              <p>slideIn</p>
+            </div>
+          </AnimatedComponent>
         </div>
       </main>
       <Footer />
