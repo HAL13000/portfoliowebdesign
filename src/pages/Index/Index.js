@@ -11,6 +11,7 @@ import webDevImg from "../../images/pics/img_webdevelop_m.png";
 import graphicImg from "../../images/pics/img_graphicdesign_m.png";
 import creativeImg from "../../images/pics/create002_m.png";
 import SlideShow from "../../components/SlideShow/SlideShow";
+import AnimatedComponent from "../../components/Animation/AnimatedComponent";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -61,43 +62,50 @@ const Index = () => {
         {/* My service */}
         <div className="myService">
           <p className="section">MY SERVICE</p>
-          <div className="myServiceBox">
-            <img className="changeColor" src={webDesignImg} />
-            <div className="serviceDescription">
-              <p className="title">Web Design</p>
-              <p className="description">
-                Web design is essential as it creates the first impression of
-                your site, ensuring it is visually appealing and user-friendly,
-                which builds credibility and encourages user engagement.
-              </p>
+          <AnimatedComponent animationType="fadeUp">
+            <div className="myServiceBox">
+              <img className="changeColor" src={webDesignImg} />
+              <div className="serviceDescription">
+                <p className="title">Web Design</p>
+                <p className="description">
+                  Web design is essential as it creates the first impression of
+                  your site, ensuring it is visually appealing and
+                  user-friendly, which builds credibility and encourages user
+                  engagement.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="myServiceBox">
-            <img className="changeColor" src={webDevImg} />
-            <div className="serviceDescription">
-              <p className="title">
-                Web Development <br /> Front-End
-              </p>
-              <p className="description">
-                Front-end web development is crucial for ensuring that your
-                website is responsive, interactive, and visually aligned with
-                your brand. It optimizes the user experience by making the site
-                easy to navigate and fast-loading.
-              </p>
+          </AnimatedComponent>
+          <AnimatedComponent animationType="fadeUp">
+            <div className="myServiceBox">
+              <img className="changeColor" src={webDevImg} />
+              <div className="serviceDescription">
+                <p className="title">
+                  Web Development <br /> Front-End
+                </p>
+                <p className="description">
+                  Front-end web development is crucial for ensuring that your
+                  website is responsive, interactive, and visually aligned with
+                  your brand. It optimizes the user experience by making the
+                  site easy to navigate and fast-loading.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="myServiceBox">
-            <img className="changeColor" src={graphicImg} />
-            <div className="serviceDescription">
-              <p className="title">Graphic Design</p>
-              <p className="description">
-                Graphic design visually communicates your brand's message,
-                enhancing the appeal of marketing materials and conveying
-                professionalism, making your brand memorable and attractive in a
-                competitive market.
-              </p>
+          </AnimatedComponent>
+          <AnimatedComponent animationType="fadeUp">
+            <div className="myServiceBox">
+              <img className="changeColor" src={graphicImg} />
+              <div className="serviceDescription">
+                <p className="title">Graphic Design</p>
+                <p className="description">
+                  Graphic design visually communicates your brand's message,
+                  enhancing the appeal of marketing materials and conveying
+                  professionalism, making your brand memorable and attractive in
+                  a competitive market.
+                </p>
+              </div>
             </div>
-          </div>
+          </AnimatedComponent>
         </div>
         {/* projects */}
         <p className="section" id="project">
@@ -109,30 +117,25 @@ const Index = () => {
           ))}
         </div>
         {/* contact me */}
-        <div className="contactMe">
-          <img className="changeColor" src={creativeImg} />
-          <div className="contactMe_container">
-            <p className="subTitle">HELLO</p>
-            <p className="title">
-              FROM IDEA <br />
-              TO PRODUCT
-            </p>
-            <p className="description">
-              Passionate Web Designer seeking new opportunities to create
-              engaging user experiences and bring designs to life. If you have
-              any request or question about work, please feel free to contact
-              me!
-            </p>
-            <Button text="Contact Me" onClick={handleAbout} />
+        <AnimatedComponent animationType="slideIn">
+          <div className="contactMe">
+            <img className="changeColor" src={creativeImg} />
+            <div className="contactMe_container">
+              <p className="subTitle">HELLO</p>
+              <p className="title">
+                FROM IDEA <br />
+                TO PRODUCT
+              </p>
+              <p className="description">
+                Passionate Web Designer seeking new opportunities to create
+                engaging user experiences and bring designs to life. If you have
+                any request or question about work, please feel free to contact
+                me!
+              </p>
+              <Button text="Contact Me" onClick={handleAbout} />
+            </div>
           </div>
-        </div>
-
-        <Button
-          text="test"
-          onClick={() => {
-            navigate("/test");
-          }}
-        />
+        </AnimatedComponent>
       </main>
       <Footer />
     </div>
@@ -140,3 +143,12 @@ const Index = () => {
 };
 
 export default Index;
+
+{
+  /* <Button
+  text="test"
+  onClick={() => {
+    navigate("/test");
+  }}
+/>  */
+}

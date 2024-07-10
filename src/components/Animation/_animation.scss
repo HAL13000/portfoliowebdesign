@@ -1,3 +1,4 @@
+// slideIn
 @keyframes slideIn {
   0% {
     transform: translateX(180px);
@@ -11,25 +12,11 @@
     opacity: 1;
   }
 }
-@keyframes slideInUp {
-  0% {
-    transform: translateY(180px);
-    opacity: 0;
-  }
-  40% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @mixin slideIn {
   animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
-@mixin slideInScroll {
-  animation: slideInUp 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-timeline: view();
-}
 
+// fadeIn
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -41,13 +28,13 @@
     clip-path: inset(0% 0% 0% 0%);
   }
 }
-
 @mixin fadeIn {
-  animation: fadeIn linear both;
-  animation-timeline: view();
-  animation-range: entry 20% cover 50%;
+  animation: fadeIn 1s linear both;
+  // animation-timeline: view();
+  // animation-range: entry 20% cover 50%;
 }
 
+// fadeUp
 @keyframes fadeUp {
   0% {
     transform: translateY(100px);
@@ -61,10 +48,22 @@
     transform: translateY(0);
   }
 }
-
 @mixin fadeUp {
   animation: fadeUp 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-  animation-timeline: view();
+  // animation-timeline: view();
+}
+
+.animated-element {
+  opacity: 0;
+  &.fadeIn {
+    @include fadeIn;
+  }
+  &.fadeUp {
+    @include fadeUp;
+  }
+  &.slideIn {
+    @include slideIn;
+  }
 }
 
 // @keyframes kiran {
@@ -110,4 +109,20 @@
 //   &:hover::before {
 //     animation: kiran 0.5s linear;
 //   }
+// }
+
+// @keyframes slideInUp {
+//   0% {
+//     transform: translateY(180px);
+//     opacity: 0;
+//   }
+//   40% {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+// @mixin slideInScroll {
+//   animation: slideInUp 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+//   animation-timeline: view();
 // }
