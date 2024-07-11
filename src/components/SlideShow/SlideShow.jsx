@@ -3,6 +3,7 @@ import "./SlideShow.scss";
 import image1 from "../../images/pics/img001_l.jpeg";
 import image2 from "../../images/pics/img002_l.jpeg";
 import image3 from "../../images/pics/img003_l.jpeg";
+import image6 from "../../images/pics/img006_l.jpeg";
 
 const SlideShow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,6 +11,7 @@ const SlideShow = () => {
     { url: image1, caption: "Slide 1" },
     { url: image2, caption: "Slide 2" },
     { url: image3, caption: "Slide 3" },
+    { url: image6, caption: "Slide 6" },
     // ... more slides
   ];
 

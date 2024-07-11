@@ -14,6 +14,7 @@ footer {
       width: 80px;
       height: 80px;
       border-radius: 50%;
+      filter: sepia(0.4) contrast(0.8);
       background-image: url("../../images/pics/pic001.jpeg");
       background-size: 110px;
       background-position: 70% 45%;

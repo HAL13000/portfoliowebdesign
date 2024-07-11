@@ -5,8 +5,7 @@
   overflow: hidden;
   main {
     .aboutMe {
-      margin-top: 50px;
-
+      // margin-top: 50px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -25,7 +24,8 @@
         width: 300px;
         height: 400px;
         padding: 50px;
-        padding-top: 80px;
+        filter: sepia(0.5) contrast(0.7);
+        // filter: grayscale(0.6) contrast(0.7);
         @include tab {
           padding: 30px;
           padding-top: 10px;
