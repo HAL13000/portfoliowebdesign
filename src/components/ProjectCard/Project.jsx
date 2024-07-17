@@ -13,7 +13,10 @@ const Project = ({ project }) => {
     <div className="project" onClick={handleNavigateProjectCase}>
       <img src={project.url} loading="lazy" />
       <div className="label">
-        <p className="title">{project.title}</p>
+        <div className="titleBox">
+          <p className="title">{project.title}</p>
+          <p className="year">{project.year}</p>
+        </div>
         {project.hashtags && (
           <div className="hashtags">
             {project.hashtags.map((hashtag, i) => (
