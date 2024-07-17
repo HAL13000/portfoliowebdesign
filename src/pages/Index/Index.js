@@ -41,8 +41,8 @@ const Index = () => {
       <div className="hero">
         <div className="hero_container">
           <h1>
-            Creating digital products that blend design sensibility with taste
-            and seamless user experiences and robust technical performance.
+            Creating digital products that blend design sensibility with taste,
+            seamless user experiences and solid technical performance.
           </h1>
           <div className="heroBox">
             <p className="title">Haruka ISHIKAWA</p>
@@ -66,7 +66,7 @@ const Index = () => {
               <div className="serviceDescription">
                 <p className="title">Web Design</p>
                 <p className="description">
-                  We provide digital products that emphasize UX/UI, combining
+                  I provide digital products that emphasize UX/UI, combining
                   both design and functionality.
                 </p>
               </div>
@@ -93,8 +93,8 @@ const Index = () => {
               <div className="serviceDescription">
                 <p className="title">Graphic Design</p>
                 <p className="description">
-                  We create designs that are simple yet fun and playful,
-                  ensuring they are user-friendly and approachable for everyone.
+                  I create designs that are simple yet fun and playful, ensuring
+                  that they are user-friendly and approachable for everyone.
                 </p>
               </div>
             </div>
