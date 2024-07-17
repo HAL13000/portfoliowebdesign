@@ -1,6 +1,9 @@
 @import "./themes";
 @import "./media";
 @import "../../src/components/Animation/animation";
+@import "./font";
+@import "./line";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -22,9 +25,19 @@ main {
     overflow: hidden;
   }
 }
+h1 {
+  font-size: 48px;
+  @include tab {
+    font-size: 32px;
+  }
+  @include sp {
+    font-size: 28px;
+  }
+}
 p.section {
   font-weight: bold;
   font-size: 32px;
+  @include line;
   @include tab {
     font-size: 28px;
   }

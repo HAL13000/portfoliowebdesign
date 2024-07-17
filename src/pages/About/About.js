@@ -54,7 +54,7 @@ const About = () => {
             <div className="itemContainer">
               <p className="title">CONTACT</p>
               <div className="itemBox">
-                <p className="item">harukaishikawa8000@gmail.com</p>
+                <p className="description">harukaishikawa8000@gmail.com</p>
               </div>
               <div className="itemBox">
                 <button className="navigateBtn" onClick={handleToLinkedIn}>
