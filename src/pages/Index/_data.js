@@ -13,14 +13,14 @@ import Travibes003 from "../../images/projectImages/Travibes003.jpg";
 import Travibes004 from "../../images/projectImages/Travibes004.jpg";
 import Travibes005 from "../../images/projectImages/Travibes005.jpg";
 import img001 from "../../images/pics/img_graphicdesign_m.png";
-import kikoi001 from "../../images/projectImages/Kikoi001.png";
-import kikoi002 from "../../images/projectImages/Kikoi002.png";
-import kikoi003 from "../../images/projectImages/Kikoi003.png";
-import kikoi004 from "../../images/projectImages/Kikoi004.png";
-import kikoi006 from "../../images/projectImages/Kikoi006.png";
-import kikoi007 from "../../images/projectImages/Kikoi007.png";
-import kikoi008 from "../../images/projectImages/Kikoi008.png";
-import kikoi009 from "../../images/projectImages/Kikoi009.png";
+import kikoi001 from "../../images/projectImages/Kikoi001.jpeg";
+import kikoi002 from "../../images/projectImages/Kikoi002.jpeg";
+import kikoi003 from "../../images/projectImages/Kikoi003.jpeg";
+import kikoi004 from "../../images/projectImages/Kikoi004.jpeg";
+import kikoi006 from "../../images/projectImages/Kikoi006.jpeg";
+import kikoi007 from "../../images/projectImages/Kikoi007.jpeg";
+import kikoi008 from "../../images/projectImages/Kikoi008.jpeg";
+import kikoi009 from "../../images/projectImages/Kikoi009.jpeg";
 
 export const data = [
   {
