@@ -12,7 +12,6 @@ import graphicImg from "../../images/pics/img_graphicdesign_m.png";
 import creativeImg from "../../images/pics/create002_m.png";
 import SlideShow from "../../components/SlideShow/SlideShow";
 import AnimatedComponent from "../../components/Animation/AnimatedComponent";
-
 const Index = () => {
   const navigate = useNavigate();
   const { state } = useLocation();
@@ -42,9 +41,8 @@ const Index = () => {
       <div className="hero">
         <div className="hero_container">
           <h1>
-            Transforme an idea into a product.
-            <br /> As a web designer with skills in UX/UI design, Graphic
-            Design, and Web development, I create engaging digital experiences.
+            Creating digital products that blend design sensibility with taste
+            and seamless user experiences and robust technical performance.
           </h1>
           <div className="heroBox">
             <p className="title">Haruka ISHIKAWA</p>
@@ -68,10 +66,8 @@ const Index = () => {
               <div className="serviceDescription">
                 <p className="title">Web Design</p>
                 <p className="description">
-                  Web design is essential as it creates the first impression of
-                  your site, ensuring it is visually appealing and
-                  user-friendly, which builds credibility and encourages user
-                  engagement.
+                  We provide digital products that emphasize UX/UI, combining
+                  both design and functionality.
                 </p>
               </div>
             </div>
@@ -84,10 +80,9 @@ const Index = () => {
                   Web Development <br /> Front-End
                 </p>
                 <p className="description">
-                  Front-end web development is crucial for ensuring that your
-                  website is responsive, interactive, and visually aligned with
-                  your brand. It optimizes the user experience by making the
-                  site easy to navigate and fast-loading.
+                  With knowledge in front-end development, I can create web
+                  applications. By combining design and coding skills, I can
+                  efficiently and swiftly produce products without any waste.
                 </p>
               </div>
             </div>
@@ -98,10 +93,8 @@ const Index = () => {
               <div className="serviceDescription">
                 <p className="title">Graphic Design</p>
                 <p className="description">
-                  Graphic design visually communicates your brand's message,
-                  enhancing the appeal of marketing materials and conveying
-                  professionalism, making your brand memorable and attractive in
-                  a competitive market.
+                  We create designs that are simple yet fun and playful,
+                  ensuring they are user-friendly and approachable for everyone.
                 </p>
               </div>
             </div>
