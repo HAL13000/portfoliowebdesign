@@ -13,11 +13,39 @@ import Travibes003 from "../../images/projectImages/Travibes003.jpg";
 import Travibes004 from "../../images/projectImages/Travibes004.jpg";
 import Travibes005 from "../../images/projectImages/Travibes005.jpg";
 import img001 from "../../images/pics/img_graphicdesign_m.png";
+import kikoi001 from "../../images/projectImages/Kikoi001.png";
+import kikoi002 from "../../images/projectImages/Kikoi002.png";
+import kikoi003 from "../../images/projectImages/Kikoi003.png";
+import kikoi004 from "../../images/projectImages/Kikoi004.png";
+import kikoi006 from "../../images/projectImages/Kikoi006.png";
+import kikoi007 from "../../images/projectImages/Kikoi007.png";
+import kikoi008 from "../../images/projectImages/Kikoi008.png";
+import kikoi009 from "../../images/projectImages/Kikoi009.png";
 
 export const data = [
   {
+    title: "KIKOI",
+    url: kikoi009,
+    year: "2023",
+    hashtags: ["#GraphicDesign"],
+    id: "005",
+    description:
+      "KIKOI is a brand of 'Earthful clothing'. Clothes are 100% handmade from Tanzania and dedicated to the circulation of happiness such as social development in the local area of Tanzania.  I worked as a graphic designer.",
+    projectImages: [
+      kikoi001,
+      kikoi003,
+      kikoi008,
+      kikoi006,
+      kikoi004,
+      kikoi007,
+      kikoi002,
+    ],
+    link: "https://www.instagram.com/kikoi_earth/",
+  },
+  {
     title: "Travibes",
     url: Travibes005,
+    year: "2023",
     hashtags: ["#WebDesign", "#WebDevelopment"],
     id: "001",
     description:
@@ -28,6 +56,7 @@ export const data = [
   {
     title: "Chattie",
     url: Chattie001,
+    year: "2023",
     hashtags: ["#WebDesign", "#WebDevelopment"],
     id: "002",
     description:
@@ -38,6 +67,7 @@ export const data = [
   {
     title: "My Memo",
     url: MyMemo003,
+    year: "2024",
     hashtags: ["#WebDesign", "#WebDevelopment"],
     id: "003",
     description:
@@ -48,6 +78,7 @@ export const data = [
   {
     title: "Meow Chatting",
     url: Meowchatting003,
+    year: "2022",
     hashtags: ["#WebDesign", "#GraphicDesign"],
     id: "004",
     description:

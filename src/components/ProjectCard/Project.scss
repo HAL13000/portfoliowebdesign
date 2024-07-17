@@ -29,10 +29,22 @@
     }
   }
   .label {
-    .title {
-      font-weight: bold;
-      padding: 5px 10px;
-      margin: 0;
+    .titleBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        font-weight: bold;
+        padding: 5px 10px;
+        margin: 0;
+      }
+      .year {
+        margin: 0 10px;
+        padding: 3px;
+        border-bottom: 1px solid var(--mainColor);
+        // border: solid 1px var(--mainColor);
+        // border-radius: 50px;
+      }
     }
     .hashtags {
       display: flex;
