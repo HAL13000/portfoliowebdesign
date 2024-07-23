@@ -21,8 +21,32 @@ import kikoi006 from "../../images/projectImages/Kikoi006.jpeg";
 import kikoi007 from "../../images/projectImages/Kikoi007.jpeg";
 import kikoi008 from "../../images/projectImages/Kikoi008.jpeg";
 import kikoi009 from "../../images/projectImages/Kikoi009.jpeg";
+import Kombucha001 from "../../images/projectImages/Kombucha001_l.jpeg";
+import Kombucha002 from "../../images/projectImages/Kombucha002_l.jpeg";
+import Kombucha003 from "../../images/projectImages/Kombucha003_l.jpeg";
+import Kombucha004 from "../../images/projectImages/Kombucha004_l.jpeg";
+import Kombucha005 from "../../images/projectImages/Kombucha005_l.jpeg";
+import Kombucha006 from "../../images/projectImages/Kombucha006_l.jpeg";
+import Kombucha007 from "../../images/projectImages/Kombucha007_l.jpeg";
 
 export const data = [
+  {
+    title: "Kombucha",
+    url: Kombucha007,
+    hashtags: ["#WebDesign", "#GraphicDesign"],
+    id: "006",
+    description:
+      "Graphic Design for Kombucha Drink. Work in progress for their web design.",
+    projectImages: [
+      Kombucha001,
+      Kombucha002,
+      // Kombucha003,
+      Kombucha004,
+      Kombucha005,
+      Kombucha006,
+    ],
+    link: "",
+  },
   {
     title: "KIKOI",
     url: kikoi009,
@@ -86,15 +110,6 @@ export const data = [
     projectImages: [Meowchatting001, Meowchatting002],
     link: "https://meow-chatting.vercel.app/",
   },
-  // {
-  //   title: "Todos",
-  //   url: img001,
-  //   hashtags: ["#WebDesign", "#GraphicDesign"],
-  //   id: "005",
-  //   description: "  modifier le portfolio ",
-  //   projectImages: [img001],
-  //   link: "",
-  // },
 ];
 
 //   {
