@@ -33,6 +33,8 @@ export const data = [
   {
     title: "Kombucha",
     url: Kombucha007,
+    year: "2024",
+
     hashtags: ["#WebDesign", "#GraphicDesign"],
     id: "006",
     description:
