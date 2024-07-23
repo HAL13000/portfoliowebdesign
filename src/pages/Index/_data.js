@@ -23,18 +23,20 @@ import kikoi008 from "../../images/projectImages/Kikoi008.jpeg";
 import kikoi009 from "../../images/projectImages/Kikoi009.jpeg";
 import Kombucha001 from "../../images/projectImages/Kombucha001_l.jpeg";
 import Kombucha002 from "../../images/projectImages/Kombucha002_l.jpeg";
-import Kombucha003 from "../../images/projectImages/Kombucha003_l.jpeg";
+// import Kombucha003 from "../../images/projectImages/Kombucha003_l.jpeg";
 import Kombucha004 from "../../images/projectImages/Kombucha004_l.jpeg";
 import Kombucha005 from "../../images/projectImages/Kombucha005_l.jpeg";
 import Kombucha006 from "../../images/projectImages/Kombucha006_l.jpeg";
 import Kombucha007 from "../../images/projectImages/Kombucha007_l.jpeg";
+import Kombucha008 from "../../images/projectImages/Kombucha008_l.jpeg";
+import Kombucha009 from "../../images/projectImages/Kombucha009_l.jpeg";
+import Kombucha0012 from "../../images/projectImages/Kombucha0012_l.jpeg";
 
 export const data = [
   {
     title: "Kombucha",
-    url: Kombucha007,
+    url: Kombucha0012,
     year: "2024",
-
     hashtags: ["#WebDesign", "#GraphicDesign"],
     id: "006",
     description:
@@ -46,6 +48,9 @@ export const data = [
       Kombucha004,
       Kombucha005,
       Kombucha006,
+      Kombucha007,
+      Kombucha008,
+      Kombucha009,
     ],
     link: "",
   },
