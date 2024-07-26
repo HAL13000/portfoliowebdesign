@@ -31,6 +31,8 @@ import Kombucha007 from "../../images/projectImages/Kombucha007_l.jpeg";
 import Kombucha008 from "../../images/projectImages/Kombucha008_l.jpeg";
 import Kombucha009 from "../../images/projectImages/Kombucha009_l.jpeg";
 import Kombucha0012 from "../../images/projectImages/Kombucha0012_l.jpeg";
+import Kombucha0016 from "../../images/projectImages/Kombucha0016_l.jpeg";
+import Kombucha0017 from "../../images/projectImages/Kombucha0017_l.jpeg";
 
 export const data = [
   {
@@ -40,11 +42,13 @@ export const data = [
     hashtags: ["#WebDesign", "#GraphicDesign"],
     id: "006",
     description:
-      "Graphic Design for Kombucha Drink. Work in progress for their web design.",
+      "'Sip Happiness.' I worked for their Graphic Design and Web Design for Organic Kombucha Drink. From the link below, you can access to the figma file.",
     projectImages: [
       Kombucha001,
       Kombucha002,
       // Kombucha003,
+      Kombucha0016,
+      Kombucha0017,
       Kombucha004,
       Kombucha005,
       Kombucha006,
@@ -52,7 +56,7 @@ export const data = [
       Kombucha008,
       Kombucha009,
     ],
-    link: "",
+    link: "https://www.figma.com/design/cy1E4ICOUjtKlrgXKAfNH7/Personal-Projects?node-id=0-1&t=rK1mmJbhOAF2nca4-1",
   },
   {
     title: "KIKOI",
