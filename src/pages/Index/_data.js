@@ -33,8 +33,35 @@ import Kombucha009 from "../../images/projectImages/Kombucha009_l.jpeg";
 import Kombucha0012 from "../../images/projectImages/Kombucha0012_l.jpeg";
 import Kombucha0016 from "../../images/projectImages/Kombucha0016_l.jpeg";
 import Kombucha0017 from "../../images/projectImages/Kombucha0017_l.jpeg";
+import localOasis0001 from "../../images/projectImages/LocalOasis0001.jpeg";
+import localOasis001 from "../../images/projectImages/LocalOasis001.jpeg";
+import localOasis002 from "../../images/projectImages/LocalOasis002.jpeg";
+import localOasis003 from "../../images/projectImages/LocalOasis003.jpeg";
+import localOasis004 from "../../images/projectImages/LocalOasis004.jpeg";
+import LocalOasis005 from "../../images/projectImages/LocalOasis005.jpeg";
+import LocalOasis006 from "../../images/projectImages/LocalOasis006.jpeg";
+import LocalOasis007 from "../../images/projectImages/LocalOasis007.jpeg";
 
 export const data = [
+  {
+    title: "Local Oasis",
+    url: localOasis0001,
+    year: "2024",
+    hashtags: ["#WebDesign", "#GraphicDesign"],
+    id: "007",
+    description:
+      "Connect with local plant glowers, bring home plants, and create your own oasis.",
+    projectImages: [
+      localOasis001,
+      localOasis002,
+      localOasis003,
+      localOasis004,
+      LocalOasis005,
+      LocalOasis006,
+      LocalOasis007,
+    ],
+    link: "https://www.figma.com/design/JIMwwDUQToNvX0srBGwveA/Local-Oasis?node-id=0-1&t=uEec5M7CqTxA1hxN-1",
+  },
   {
     title: "Kombucha",
     url: Kombucha0012,
