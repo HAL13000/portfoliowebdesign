@@ -129,7 +129,7 @@ export const data = [
     title: "My Memo",
     url: MyMemo003,
     year: "2024",
-    hashtags: ["#WebDesign", "#WebDevelopment"],
+    hashtags: ["#WebDevelopment"],
     id: "003",
     description:
       "My Memo is a web application for taking and managing notes, inspired by Notion. Users can create, edit, and access their memos from laptops, tablets, and phones, ensuring that their notes are always available across all devices. ",
