@@ -33,19 +33,18 @@ import Kombucha009 from "../../images/projectImages/Kombucha009_l.jpeg";
 import Kombucha0012 from "../../images/projectImages/Kombucha0012_l.jpeg";
 import Kombucha0016 from "../../images/projectImages/Kombucha0016_l.jpeg";
 import Kombucha0017 from "../../images/projectImages/Kombucha0017_l.jpeg";
-import localOasis0001 from "../../images/projectImages/LocalOasis0001.jpeg";
 import localOasis001 from "../../images/projectImages/LocalOasis001.jpeg";
 import localOasis002 from "../../images/projectImages/LocalOasis002.jpeg";
 import localOasis003 from "../../images/projectImages/LocalOasis003.jpeg";
-import localOasis004 from "../../images/projectImages/LocalOasis004.jpeg";
-import LocalOasis005 from "../../images/projectImages/LocalOasis005.jpeg";
-import LocalOasis006 from "../../images/projectImages/LocalOasis006.jpeg";
-import LocalOasis007 from "../../images/projectImages/LocalOasis007.jpeg";
+import localOasis005 from "../../images/projectImages/LocalOasis005.jpeg";
+import LocalOasis009 from "../../images/projectImages/LocalOasis009.jpeg";
+import LocalOasis0010 from "../../images/projectImages/LocalOasis0010.jpeg";
+import LocalOasis0011 from "../../images/projectImages/LocalOasis0011.jpeg";
 
 export const data = [
   {
     title: "Local Oasis",
-    url: localOasis0001,
+    url: LocalOasis0010,
     year: "2024",
     hashtags: ["#WebDesign", "#GraphicDesign"],
     id: "007",
@@ -55,10 +54,10 @@ export const data = [
       localOasis001,
       localOasis002,
       localOasis003,
-      localOasis004,
-      LocalOasis005,
-      LocalOasis006,
-      LocalOasis007,
+      LocalOasis009,
+      localOasis005,
+      LocalOasis0011,
+      LocalOasis0010,
     ],
     link: "https://www.figma.com/design/JIMwwDUQToNvX0srBGwveA/Local-Oasis?node-id=0-1&t=uEec5M7CqTxA1hxN-1",
   },
