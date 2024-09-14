@@ -37,7 +37,7 @@ import localOasis001 from "../../images/projectImages/LocalOasis001.jpeg";
 import localOasis002 from "../../images/projectImages/LocalOasis002.jpeg";
 import localOasis003 from "../../images/projectImages/LocalOasis003.jpeg";
 import localOasis005 from "../../images/projectImages/LocalOasis005.jpeg";
-import LocalOasis009 from "../../images/projectImages/LocalOasis009.jpeg";
+import LocalOasis009 from "../../images/projectImages/LocalOasis009.jpg";
 import LocalOasis0010 from "../../images/projectImages/LocalOasis0010.jpeg";
 import LocalOasis0011 from "../../images/projectImages/LocalOasis0011.jpeg";
 
